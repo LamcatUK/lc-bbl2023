@@ -37,7 +37,7 @@ defined('ABSPATH') || exit;
     <div class="colophon">
         <div class="container-xl">
             <div>&copy; <?=date('Y')?>
-                Bubblelicious Bars</div>
+                Bubblelicious Bars | <a href="/privacy-policy/">Privacy</a> &amp; <a href="/cookies/">Cookies</a></div>
             <div>Site by <a href="https://www.lamcat.co.uk/" target="_blank">Lamcat</a></div>
         </div>
     </div>
