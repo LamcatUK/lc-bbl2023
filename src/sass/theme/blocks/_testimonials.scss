@@ -1,0 +1,35 @@
+.testimonials {
+
+    &__inner {
+        position: relative;
+        max-width: 66ch;
+        margin-inline: auto;
+        padding-inline: 4rem;
+    }
+    &__content {
+        &::before,
+        &::after {
+            color: var(--col-pink-400);
+            opacity: 0.2;
+            font-family: 'Font Awesome 6 Free';
+            position: absolute;
+            font-size: var(--fs-700);
+            font-weight: 600;
+            line-height: 1;
+        }
+        &::before {
+            content: "\f10e";
+            transform: scaleX(-1);
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            content: "\f10e";
+            bottom: 2rem;
+            right: 0;
+        }
+        img {
+            display: inline;
+        }
+    }
+}

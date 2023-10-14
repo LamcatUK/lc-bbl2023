@@ -1,0 +1,74 @@
+$col-primary: #045bb9;
+$col-primary-400: #045bb9;
+$col-primary-900: #022f69;
+$col-primary-200: #047bdc;
+$col-secondary: #ff9305;
+$col-dark: #022F6A;
+$col-darkest: hsl(0, 0%, 2%);
+$col-highlight: hsl(23, 83%, 53%);
+// $col-highlight: #eb7024;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-pink-900: 332.98deg 74.86% 34.31%;
+    --hsl-pink-400: 333.5deg 81.1% 49.8%;
+    --hsl-pink-200: 333.24deg 77.65% 97.9%;
+
+    --hsl-aqua-400: 186.29deg 51.72% 60.2%;
+    --hsl-aqua-200: 186.29deg 51.72% 92%;
+    // --hsl-aqua-200: #f4fbfc;
+
+    --hsl-yellow-400: 41.28deg 94.78% 54.9%;
+    --hsl-blue-400:   198.05deg 100% 44.31%;
+
+
+    --col-pink-900: hsl(var(--hsl-pink-900));
+    --col-pink-400: hsl(var(--hsl-pink-400));
+    --col-pink-200: hsl(var(--hsl-pink-200));
+    --col-aqua-400: hsl(var(--hsl-aqua-400));
+    --col-aqua-200: hsl(var(--hsl-aqua-200));
+    --col-yellow-400: hsl(var(--hsl-yellow-400));
+    --col-blue-400: hsl(var(--hsl-blue-400));
+
+    --col-light: #ffffff;
+    --col-dark: #1a1a1a;
+    
+    --h-top: 102px;
+
+    --fw-200: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+    /* 12.50px → 12.80px */
+    --fs-200: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    /* 15.00px → 16.00px */
+    --fs-300: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    /* 18.00px → 20.00px */
+    --fs-400: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    /* 21.60px → 25.00px */
+    --fs-450: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    /* 25.92px → 31.25px */
+    --fs-500: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+    /* 31.10px → 39.06px */
+    --fs-600: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+    /* 37.32px → 48.83px */
+    --fs-700: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+    /* 44.79px → 61.04px */
+    --fs-800: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+    /* 53.75px → 76.29px */
+    // --fs-900: clamp(3.36rem, calc(2.87rem + 2.45vw), 4.77rem);
+    // --fs-900: clamp(5.81rem, calc(4.58rem + 6.10vw), 9.31rem);
+    --fs-900: clamp(4.84rem, calc(3.93rem + 4.54vw), 7.45rem);
+
+    --transition: 0.3s ease-out;
+    --transition-short: 0.1s ease-in;
+
+    --border-lg: 1rem;
+    --border-sm: 0.5rem;
+    --border-xs: 0.25rem;
+
+    --col-background: var(--col-light);
+    --col-text: var(--col-dark);
+
+}

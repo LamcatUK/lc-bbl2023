@@ -1,0 +1,136 @@
+// @import "props";
+@import "typography";
+@import "colours";
+@import "header";
+@import "footer";
+@import "buttons";
+// @import "blog";
+@import "forms";
+@import "woocommerce";
+@import "blocks/blocks";
+// @import "case_study";
+
+
+body {
+    background-color: var(--col-background);
+    color: var(--col-text);
+}
+
+// a:not(.btn,.btn-bbl) {
+//     color: var(--col-primary-900);
+//     font-weight: var(--fw-600);
+//     text-decoration: none;
+//     transition: color var(--transition);
+//     &:hover {
+//         color: var(--col-primary-400);
+//     }
+// }
+
+a {
+    text-decoration: none;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: calc(var(--h-top) * -1); //-150px;
+    visibility: hidden;
+}
+
+@media (min-width:992px) {
+    .cols-lg-2 {
+        columns: 2;
+    }
+    .cols-lg-3 {
+        columns: 3;
+    }
+}
+
+.share-icons {
+    padding-top: 1rem;
+    a:not(:last-of-type) {
+        margin-right: 0.5rem;
+    }
+}
+
+.social-share {
+    a {
+        font-size: var(--fs-450);
+        &:hover {
+            color: var(--col-pink-400);
+        }
+    }
+}
+
+.pb-big {
+    padding-bottom: 150px;
+}
+
+#breadcrumbs {
+    font-size: 0.889rem;
+}
+
+
+.reading {
+    font-size: 0.889rem;
+    font-style: italic;
+}
+
+
+main.page {
+    margin-top: var(--h-top);
+}
+
+
+.socials {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--fs-700);
+    a {
+        color: var(--col-pink-400);
+        transition: color var(--transition);
+        &:hover {
+            color: var(--col-aqua-400);
+        }
+    }
+}
+.bubble-top--aqua-400 .socials a:hover {
+    color: white;
+}
+
+a[href$=".pdf"] {
+    color: var(--col-pink-400);
+    &::before {
+        content: "\f1c1";
+        font-family: "font awesome 6 free";
+        margin-right: 5px;
+    }
+    &::after {
+        font-size: 0.8rem;
+        content: " (PDF, " attr(data-size) ")";
+    }
+}
+
+// show stuff that overflows horizontally
+// * {
+//     outline: 1px solid #f00 !important;
+// }
+// show stuff that overflows horizontally via console JS
+/*
+var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
+for (; i < all.length; i++) {
+    rect = all[i].getBoundingClientRect();
+    if (rect.right > docWidth || rect.left < 0){
+        console.log(all[i]);
+        all[i].style.borderTop = '1px solid red';
+    }
+}
+*/
+
+// @mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+// 	$factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
+// 	$calc-value: unquote('#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }');
+
+// 	font-size: $min-value; // Fallback for older browsers
+// 	font-size: clamp(#{if($min-value > $max-value, $max-value, $min-value)}, #{$calc-value}, #{if($min-value > $max-value, $min-value, $max-value)});
+// }

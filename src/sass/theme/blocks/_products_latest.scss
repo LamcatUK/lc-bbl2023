@@ -1,0 +1,40 @@
+.products-latest {
+    &__grid {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        .slick-slide {
+            padding-block: 2rem 3rem;
+        }
+    }
+    &__product {
+        display: block;
+        background-color: var(--col-light);
+        padding: 1rem;
+        text-decoration: none;
+        max-width: calc(300px + 2rem);
+        margin-inline: auto;
+        img {
+            margin-bottom: 1rem;
+        }
+        h3 {
+            text-align: center;
+            color: var(--col-dark);
+            font-size: var(--fs-500);
+        }
+        transition: transform var(--transition-short),  box-shadow var(--transition-short);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        &.odd:hover,
+        &.even:hover {
+            transform: rotate(0) scale(1);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        &.even {
+            transform: rotate(-2deg) scale(0.9);
+        }
+        &.odd {
+            transform: rotate(3deg) scale(0.9);
+        }
+    }
+}

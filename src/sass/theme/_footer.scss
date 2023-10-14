@@ -1,0 +1,46 @@
+footer {
+    background-color: var(--col-pink-400);
+    color: #fff !important;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-400);
+    a {
+        color: #fff !important;
+        text-decoration: none;
+        transition: color var(--transition);
+        &:hover {
+            color: color-mix(in srgb, #fff, #000 20%) !important;
+        }
+    }
+
+    .logo {
+        display: block;
+        width: min(120px, 90vw);
+        margin-inline: auto;
+        @media (min-width:576px) {
+            margin-left: 0;
+        }
+    }
+
+    .menu {
+        list-style: none;
+        @media(min-width:992px) {
+            padding-inline-start: 0;
+        }
+    }
+
+    .fa-li {
+        color: var(--col-secondary-400);
+    }
+
+    .colophon {
+        background-color: var(--col-pink-900);
+        color: #fff !important;
+        padding-block: 0.5rem;
+        .container-xl {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: var(--fs-200);
+        }
+    }
+}

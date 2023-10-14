@@ -1,0 +1,128 @@
+
+#wrapper-navbar {
+
+    box-shadow: hsl(var(--hsl-pink-400) / 0.2) 0px 8px 24px;
+
+    transition: transform 0.3s ease-in-out;
+    &.hide {
+        transform: translateY(-140px);
+    }
+
+    .logo-container {
+        background-image: url(../img/bubblelicious-logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        aspect-ratio: 1;
+        width: 70px;
+    }
+
+    font-weight: var(--fw-400);
+
+    .nav-link {
+        color: var(--col-dark);
+        position: relative;
+        &:hover,
+        &:focus-visible,
+        &[aria-current="page"] {
+            color: var(--col-pink-400);
+            &::before {
+                transform: scale(1);    
+            }
+        }
+        @media (min-width:768px) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scale(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: var(--col-pink-400);
+                transform-origin: center left;
+                transition: transform var(--transition);
+            }
+        }
+    }    
+
+    .current-menu-ancestor {
+        & > .nav-link {
+            color: var(--col-pink-400);
+            &::before {
+                transform: scale(1);    
+            }
+        }
+        .dropdown-item[aria-current="page"] {
+            color: var(--col-pink-400);
+            font-weight: var(--fw-900);
+        }
+    }
+
+
+    background: white;
+    // @media (min-width: 992px) {
+    //     background: linear-gradient(180deg, rgba(255 255 255 / 1) 50%, rgba(255 255 255 / 0) 100%);
+    // }
+
+    @media (max-width:767px) {
+        #navbar #navbarr {
+            height: 100vh;
+            font-size: var(--fs-600);
+            text-align: center;
+            li {
+                padding-block: 0.5rem;
+                .btn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/*
+#wrapper-navbar {
+    
+    background-color: #fff;
+
+    .logo {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        background-image: url(../img/bubblelicious-logo.svg);
+        aspect-ratio: 2 / 1;
+        width: min(100px,50vw);
+    }
+    .navbar-toggle {
+        width:20px;
+        height:20px;
+        background-color: transparent;
+        border: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .navbar-toggle {
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 80 80'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D .cls-2 %7B fill: url(%23linear-gradient); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='11.72' y1='11.72' x2='68.29' y2='68.29' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23045cb8'/%3E%3Cstop offset='1' stop-color='%23047adb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-2' d='m68.29,68.29c-1.7,1.7-3.93,2.54-6.15,2.54s-4.44-.84-6.14-2.54l-16-16-16,16c-3.39,3.39-8.89,3.39-12.28,0-1.7-1.7-2.55-3.92-2.55-6.15s.85-4.45,2.55-6.14l16-15.99L11.72,24.01c-3.4-3.4-3.4-8.9,0-12.29,1.7-1.69,3.92-2.54,6.14-2.54s4.44.85,6.14,2.54l16,16,16-16c3.39-3.39,8.89-3.39,12.29,0,1.69,1.69,2.54,3.92,2.54,6.14s-.85,4.45-2.54,6.15l-16,16,16,15.99c3.39,3.39,3.39,8.89,0,12.29Z'/%3E%3Crect class='cls-1' width='80' height='80'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .navbar-toggle.collapsed {
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 80 80'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient-2); %7D .cls-2 %7B fill: url(%23linear-gradient-3); %7D .cls-3 %7B fill: url(%23linear-gradient); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='0' y1='8.69' x2='80' y2='8.69' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23045cb8'/%3E%3Cstop offset='1' stop-color='%23047adb'/%3E%3C/linearGradient%3E%3ClinearGradient id='linear-gradient-2' y1='40' y2='40' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-3' y1='71.31' y2='71.31' xlink:href='%23linear-gradient'/%3E%3C/defs%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='cls-3' x='0' y='0' width='80' height='17.38' rx='8.69' ry='8.69'/%3E%3Crect class='cls-1' x='0' y='31.31' width='80' height='17.38' rx='8.69' ry='8.69'/%3E%3Crect class='cls-2' x='0' y='62.62' width='80' height='17.38' rx='8.69' ry='8.69'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+
+    .navbar {
+        // background-color: var(--col-primary-200);
+        font-size: var(--fs-400);
+        font-weight: var(--fw-400);
+        text-transform: uppercase;
+        a {
+            color: #000;
+        }
+    }
+
+    .current-menu-item.active > a {
+        color: var(--col-aqua-400);
+    }
+
+}
+*/

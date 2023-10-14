@@ -1,0 +1,20 @@
+.text_image {
+    &__container {
+        background-color: var(--col-light);
+        padding: 1rem 1rem 5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        max-width: 460px;
+        margin-inline: auto;
+    }
+    &__img-left {
+        transform: rotate(-2deg);
+    }
+    &__img-right {
+        transform: rotate(3deg);
+    }
+    &__image {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
+    }
+}

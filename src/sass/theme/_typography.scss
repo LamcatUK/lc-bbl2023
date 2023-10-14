@@ -1,0 +1,102 @@
+/* montserrat-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* shadows-into-light-two-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shadows Into Light Two';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shadows-into-light-two-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cafeteria-bold - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Cafeteria';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/cafeteria-bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    font-variant-ligatures: none;
+}
+
+html {
+    // font-size: var(--fs-400);
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-400);
+    line-height: 1.556;
+    font-style: normal;
+    color: var(--col-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
+    font-family: 'Shadows Into Light Two', sans-serif;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    font-weight: var(--fw-400);
+    text-wrap: balance;
+}
+
+.hero {
+    font-size: var(--fs-900);
+}
+h1, .h1 {
+    font-size: var(--fs-800);
+}
+h2, .h2 {
+    font-size: var(--fs-700);
+}
+h3, .h3 {
+    font-size: var(--fs-600);
+}
+h4, .h4 {
+    font-size: var(--fs-500);
+}
+
+strong, b {
+    font-weight: var(--fw-900);
+}
+
+.w-constrained {
+    max-width: 62ch;
+    margin-inline: auto
+}
+
+.has-small-font-size {
+    font-size: var(--fs-300);
+}
+.has-xsmall-font-size {
+    font-size: var(--fs-200);
+}
+
