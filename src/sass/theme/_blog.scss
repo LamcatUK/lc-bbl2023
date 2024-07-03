@@ -153,6 +153,7 @@
         }
         &:not(.collapsed)::after {
             background-image: var(--bs-accordion-btn-active-icon);
+            box-shadow: unset;
         }
 
     }
