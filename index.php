@@ -17,6 +17,7 @@ $img = get_the_post_thumbnail_url($pp, 'full');// ?? null;
     </div>
     <!-- <div class="bubble-hero__mask"></div> -->
 </section>
+<section class="bubble-top bubble-top--white" data-aos="fade-up">
     <div class="container-xl py-5 mb-5">
         <?php
         /* Hide filters for now.
@@ -78,6 +79,7 @@ foreach ($cats as $cat) {
 ?>
         </div>
     </div>
+</section>
 </main>
 <?php
 add_action('wp_footer', function () {
