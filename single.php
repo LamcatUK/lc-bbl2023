@@ -79,7 +79,7 @@ foreach ($blocks as $block) {
                     <?php
     }
 ?>
-                    <a href="/shop/" class="button button-green text-center d-none d-lg-block">Shop Now!</a>
+                    <a href="/shop/" class="bubble pop mx-auto"><span class="bubble--bubble"></span><span class="bubble--inner">Shop Now!</span></a>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ $q = new WP_Query(array(
 if ($q->have_posts()) {
     ?>
     <h3 class="fs-700"><span>Related</span> Posts</h3>
-    <div class="grid mb-4">
+    <div class="grid mb-4 pb-5">
         <?php
     while ($q->have_posts()) {
     $q->the_post();
@@ -124,6 +124,9 @@ if ($q->have_posts()) {
         <?php
     }
     wp_reset_postdata();
+    ?>
+    </div>
+    <?php
 }
 ?>
     </div>
