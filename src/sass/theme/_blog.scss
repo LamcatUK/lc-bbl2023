@@ -90,7 +90,7 @@
 
 .single-blog {
 
-    padding-top: 2rem;
+    padding-top: calc(var(--h-top) + 2rem);
 
     h2, .h2 {
         font-size: var(--fs-600);

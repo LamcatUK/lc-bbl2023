@@ -22893,7 +22893,7 @@ footer .colophon #woocommerce-wrapper .product,
 }
 
 .single-blog {
-  padding-top: 2rem;
+  padding-top: calc(var(--h-top) + 2rem);
 }
 .single-blog h2, .single-blog .h2 {
   font-size: var(--fs-600);
