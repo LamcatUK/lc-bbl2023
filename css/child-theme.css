@@ -22993,7 +22993,7 @@ footer .colophon #woocommerce-wrapper .product,
   font-size: var(--fs-200);
 }
 .grid .card__title {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
 }
 .grid .grid__card--sm .card__inner {
   padding: 1rem;

@@ -62,9 +62,9 @@ foreach ($cats as $cat) {
                         <?=get_the_post_thumbnail(get_the_ID(), 'large', array('class' => 'card__image'))?>
                     </div>
                     <div class="card__inner">
-                        <h3 class="card__title mb-0">
+                        <h2 class="card__title mb-0">
                             <?=get_the_title()?>
-                        </h3>
+                        </h2>
                         <div class="card__date"><?=$the_date?>
                         </div>
                         <div class="card__content">
