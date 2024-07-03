@@ -2,7 +2,7 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-require_once LC_THEME_DIR . '/inc/lc-noblog.php';
+// require_once LC_THEME_DIR . '/inc/lc-noblog.php';
 require_once LC_THEME_DIR . '/inc/lc-utility.php';
 require_once LC_THEME_DIR . '/inc/lc-posttypes.php';
 require_once LC_THEME_DIR . '/inc/lc-form.php';
