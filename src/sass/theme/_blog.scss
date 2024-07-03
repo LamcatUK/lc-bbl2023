@@ -148,6 +148,13 @@
         color: var(--col-light);
         padding: 0;
 
+        &::after {
+            background-image: var(--bs-accordion-btn-icon);
+        }
+        &:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-icon);
+        }
+
     }
 
     .sidebar {
