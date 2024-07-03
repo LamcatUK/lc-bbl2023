@@ -23024,7 +23024,7 @@ footer .colophon #woocommerce-wrapper .product,
   font-size: var(--fs-700);
 }
 .single-blog__read {
-  color: var(--col-pink-200);
+  color: var(--col-pink-400);
   font-size: var(--fs-300);
   margin-bottom: 1rem;
 }
