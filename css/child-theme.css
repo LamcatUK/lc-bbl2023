@@ -23091,7 +23091,8 @@ footer .colophon #woocommerce-wrapper .product,
 .single-blog .sidebar .quicklinks li a:hover {
   color: var(--col-pink-200);
 }
-.single-blog .related {
+
+.pad-bottom {
   padding-bottom: 9rem;
 }
 

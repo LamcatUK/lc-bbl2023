@@ -26,7 +26,7 @@ if (function_exists('yoast_breadcrumb')) {
 }
 ?>
     </section>
-    <div class="container-xl">
+    <div class="container-xl pad-bottom">
         <div class="row g-4 pb-4">
             <div class="col-lg-9 order-2">
                 <h1 class="single-blog__title"><?=get_the_title()?>
@@ -98,7 +98,7 @@ $q = new WP_Query(array(
 if ($q->have_posts()) {
     ?>
     <h3 class="fs-700"><span>Related</span> Posts</h3>
-    <div class="grid mb-4 related">
+    <div class="grid mb-4">
         <?php
     while ($q->have_posts()) {
     $q->the_post();
