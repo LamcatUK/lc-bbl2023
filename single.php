@@ -98,7 +98,7 @@ $q = new WP_Query(array(
 if ($q->have_posts()) {
     ?>
     <h3 class="fs-700"><span>Related</span> Posts</h3>
-    <div class="grid mb-4 pb-5">
+    <div class="grid mb-4 related">
         <?php
     while ($q->have_posts()) {
     $q->the_post();
