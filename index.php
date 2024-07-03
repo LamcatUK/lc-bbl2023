@@ -19,6 +19,7 @@ $img = get_the_post_thumbnail_url($pp, 'full');// ?? null;
 </section>
     <div class="container-xl py-5 mb-5">
         <?php
+        /* Hide filters for now.
 $cats = get_categories(array('exclude' => array(32)));
 ?>
         <div class="filters mb-4">
@@ -29,6 +30,9 @@ foreach ($cats as $cat) {
 }
 ?>
         </div>
+        <?php
+        */
+        ?>
         <div class="grid">
             <?php
     while (have_posts()) {
@@ -50,10 +54,10 @@ foreach ($cats as $cat) {
                 href="<?=get_the_permalink(get_the_ID())?>">
                 <div class="card card--<?=$flashcat?>">
                     <div class="card__image_container">
-                        <div
+                        <!-- <div
                             class="card__flash card__flash--<?=$flashcat?>">
                             <?=$category?>
-                        </div>
+                        </div> -->
                         <?=get_the_post_thumbnail(get_the_ID(), 'large', array('class' => 'card__image'))?>
                     </div>
                     <div class="card__inner">
