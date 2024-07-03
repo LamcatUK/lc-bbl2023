@@ -4,7 +4,7 @@ defined('ABSPATH') || exit;
 get_header();
 
 $pp = get_option('page_for_posts');
-$img = get_the_post_thumbnail_url(get_the_ID(), 'full');// ?? null;
+$img = get_the_post_thumbnail_url($pp, 'full');// ?? null;
 
 ?>
 <main id="main" class="pb-5">
