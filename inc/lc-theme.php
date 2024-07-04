@@ -205,6 +205,8 @@ function wpdocs_remove_shortcode_from_index($content)
     return $content;
 }
 
+// disable product hover zoom as it has conflicts with the webp/cdn stuff
+remove_theme_support( 'wc-product-gallery-zoom' );
 
 
 // GF really is pants.
